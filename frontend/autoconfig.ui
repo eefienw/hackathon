@@ -1,0 +1,1211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1098</width>
+    <height>878</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <widget class="QTabWidget" name="configpage">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>30</y>
+      <width>1031</width>
+      <height>761</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="stpconfig">
+     <attribute name="title">
+      <string>STP CONFIG</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton_ok">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>690</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Finsih</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_cancel">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>688</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cancel</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_checkpoint">
+      <property name="geometry">
+       <rect>
+        <x>13</x>
+        <y>158</y>
+        <width>401</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Check Point</string>
+      </property>
+      <widget class="QCheckBox" name="checkBox_network">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Network</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_tsport">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>70</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Terminal port</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_cpri">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>110</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>CPRI </string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_iqdata">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>150</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>IQdata </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_netstatus">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>33</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Net status</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_tpstatus">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>72</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TP status</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_cpristatus">
+       <property name="geometry">
+        <rect>
+         <x>131</x>
+         <y>110</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>CPRI status</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_iqstatus">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>151</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>IQdata status</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_check">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>170</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Check</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_configpoint">
+      <property name="geometry">
+       <rect>
+        <x>13</x>
+        <y>388</y>
+        <width>1021</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Run Scripts</string>
+      </property>
+      <widget class="QGroupBox" name="groupBox_cfgnetwork">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>29</y>
+         <width>961</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Config Network</string>
+       </property>
+       <widget class="QLabel" name="label_configip">
+        <property name="geometry">
+         <rect>
+          <x>11</x>
+          <y>26</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>IP:</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_configip">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>23</y>
+          <width>111</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_gateway">
+        <property name="geometry">
+         <rect>
+          <x>309</x>
+          <y>23</y>
+          <width>121</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="contextMenuPolicy">
+         <enum>Qt::DefaultContextMenu</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_gateway">
+        <property name="geometry">
+         <rect>
+          <x>239</x>
+          <y>26</y>
+          <width>61</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Gateway:</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_cfgnetsub">
+        <property name="geometry">
+         <rect>
+          <x>836</x>
+          <y>20</y>
+          <width>81</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Submit</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_DNS">
+        <property name="geometry">
+         <rect>
+          <x>518</x>
+          <y>27</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>DNS:</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_DNS">
+        <property name="geometry">
+         <rect>
+          <x>556</x>
+          <y>24</y>
+          <width>131</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_cfgterminal">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>112</y>
+         <width>961</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Config Terminal server</string>
+       </property>
+       <widget class="QLabel" name="label_tspos">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>24</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>POS :</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_tspos">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>22</y>
+          <width>111</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_tsip">
+        <property name="geometry">
+         <rect>
+          <x>239</x>
+          <y>25</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TS IP :</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_tsip">
+        <property name="geometry">
+         <rect>
+          <x>308</x>
+          <y>24</y>
+          <width>121</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_tsports">
+        <property name="geometry">
+         <rect>
+          <x>518</x>
+          <y>22</y>
+          <width>61</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TS PORT :</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_cfgtssub">
+        <property name="geometry">
+         <rect>
+          <x>836</x>
+          <y>19</y>
+          <width>81</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Submit</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_tsports">
+        <property name="geometry">
+         <rect>
+          <x>605</x>
+          <y>22</y>
+          <width>73</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_cfgruma">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>190</y>
+         <width>961</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Config RUMA</string>
+       </property>
+       <widget class="QLabel" name="label_rumapos">
+        <property name="geometry">
+         <rect>
+          <x>11</x>
+          <y>26</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>POS :</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_rumapos">
+        <property name="geometry">
+         <rect>
+          <x>64</x>
+          <y>24</y>
+          <width>101</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_rumaip">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>21</y>
+          <width>121</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_rumaip">
+        <property name="geometry">
+         <rect>
+          <x>236</x>
+          <y>26</y>
+          <width>61</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>RUMA IP :</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_rumaports">
+        <property name="geometry">
+         <rect>
+          <x>519</x>
+          <y>24</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>RUMA PORT :</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_cfgrumasub">
+        <property name="geometry">
+         <rect>
+          <x>839</x>
+          <y>18</y>
+          <width>81</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Submit</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_rumaports">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>21</y>
+          <width>73</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_log">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>160</y>
+        <width>521</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Result</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="connection">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>971</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Connection</string>
+      </property>
+      <widget class="QLabel" name="label_user">
+       <property name="geometry">
+        <rect>
+         <x>248</x>
+         <y>21</y>
+         <width>47</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;User:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::RichText</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_serverip">
+       <property name="geometry">
+        <rect>
+         <x>18</x>
+         <y>17</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Server IP:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::RichText</enum>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_passwd">
+       <property name="geometry">
+        <rect>
+         <x>538</x>
+         <y>22</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_serverip">
+       <property name="geometry">
+        <rect>
+         <x>98</x>
+         <y>22</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_port">
+       <property name="geometry">
+        <rect>
+         <x>738</x>
+         <y>22</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_user">
+       <property name="geometry">
+        <rect>
+         <x>291</x>
+         <y>21</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_port">
+       <property name="geometry">
+        <rect>
+         <x>698</x>
+         <y>20</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Port:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_stpconnection">
+       <property name="geometry">
+        <rect>
+         <x>740</x>
+         <y>90</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Connection</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_session">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>411</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Session Choice</string>
+       </property>
+       <widget class="QRadioButton" name="radioButton_ssh">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>34</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>SSH</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radioButton_telnet">
+        <property name="geometry">
+         <rect>
+          <x>158</x>
+          <y>34</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TELENT</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radioButton_ct11">
+        <property name="geometry">
+         <rect>
+          <x>276</x>
+          <y>34</y>
+          <width>71</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>RUMA</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_passwd">
+       <property name="geometry">
+        <rect>
+         <x>468</x>
+         <y>21</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Passwd:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTextEdit" name="textEdit_log">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>177</y>
+        <width>481</width>
+        <height>181</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="dhcpcofig">
+     <attribute name="title">
+      <string>DHCP CONFIG</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_dhcpconfig">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>150</y>
+        <width>431</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>DHCP config</string>
+      </property>
+      <widget class="QGroupBox" name="groupBox_add">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>341</width>
+         <height>181</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>IP info</string>
+       </property>
+       <widget class="QLineEdit" name="lineEdit_addip">
+        <property name="geometry">
+         <rect>
+          <x>88</x>
+          <y>84</y>
+          <width>181</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_addip">
+        <property name="geometry">
+         <rect>
+          <x>11</x>
+          <y>85</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>IP :</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_addmac">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>131</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>MAC:</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_addmac">
+        <property name="geometry">
+         <rect>
+          <x>88</x>
+          <y>131</y>
+          <width>181</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_addhostname">
+        <property name="geometry">
+         <rect>
+          <x>11</x>
+          <y>42</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Hostname :</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_addhostname">
+        <property name="geometry">
+         <rect>
+          <x>88</x>
+          <y>40</y>
+          <width>181</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="pushButton_cfgok">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>470</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Submit</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_cfgcancel">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>470</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_configchoice">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>230</y>
+         <width>341</width>
+         <height>221</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Config</string>
+       </property>
+       <widget class="QRadioButton" name="radioButton_search">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>95</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Search</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radioButton_del">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>110</y>
+          <width>95</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Delete</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radioButton_add">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>95</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Add</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radioButton_modify">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>150</y>
+          <width>95</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Modify</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radioButton_backup">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>190</y>
+          <width>95</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Backup</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_connect">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>991</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Connection</string>
+      </property>
+      <widget class="QLabel" name="label_dhcpip">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>DHCP server:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_dhcpip">
+       <property name="geometry">
+        <rect>
+         <x>101</x>
+         <y>45</y>
+         <width>151</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_dhcpuser">
+       <property name="geometry">
+        <rect>
+         <x>324</x>
+         <y>47</y>
+         <width>151</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_dhcpuser">
+       <property name="geometry">
+        <rect>
+         <x>283</x>
+         <y>42</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>User:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_dhcppwd">
+       <property name="geometry">
+        <rect>
+         <x>610</x>
+         <y>48</y>
+         <width>151</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_dhcppwd">
+       <property name="geometry">
+        <rect>
+         <x>548</x>
+         <y>44</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Passwd :</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_dhcpconnect">
+       <property name="geometry">
+        <rect>
+         <x>860</x>
+         <y>80</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Connect</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_dhcplog">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>150</y>
+        <width>511</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Console</string>
+      </property>
+      <widget class="QTextEdit" name="textEdit_dhcplog">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>481</width>
+         <height>481</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="FTP">
+     <attribute name="title">
+      <string>FTP</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_connect_ftp">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>991</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Connection</string>
+      </property>
+      <widget class="QLabel" name="label_ftpip">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>FTP server:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_ftpip">
+       <property name="geometry">
+        <rect>
+         <x>96</x>
+         <y>45</y>
+         <width>151</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_ftpuser">
+       <property name="geometry">
+        <rect>
+         <x>324</x>
+         <y>47</y>
+         <width>151</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_ftpuser">
+       <property name="geometry">
+        <rect>
+         <x>283</x>
+         <y>42</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>User:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_ftppwd">
+       <property name="geometry">
+        <rect>
+         <x>610</x>
+         <y>48</y>
+         <width>151</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_ftppwd">
+       <property name="geometry">
+        <rect>
+         <x>548</x>
+         <y>44</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Passwd :</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_ftpconnect">
+       <property name="geometry">
+        <rect>
+         <x>860</x>
+         <y>80</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Connect</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTreeWidget" name="treeWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>198</y>
+        <width>256</width>
+        <height>491</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>200</y>
+        <width>471</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>200</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Browse</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>250</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Upload</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1098</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
